@@ -11,7 +11,7 @@ function Project() {
     wind: 0,
     icon: "",
     humidity: 0,
-    image:"./images/weather.png"
+    image: "./images/weather.png"
   });
 
   const handler = () => {
@@ -21,23 +21,23 @@ function Project() {
           // console.log(res.data)
           let imgpath = "";
           if (res.data.weather[0].description === "clear sky") {
-            imgpath = "./images/clear.png"
+            imgpath = ""
           }
           else if (res.data.weather[0].description === "mostly Cloudy") {
-            imgpath = "./images/cloudy.png"
+            imgpath = ""
           }
           else if (res.data.weather[0].description === "Rain") {
-            imgpath = "./images/rain.png"
+            imgpath = ""
           }
           else if (res.data.weather[0].description === "stormy") {
-            imgpath = "./images/strom.png"
+            imgpath = ""
           }
           else if (res.data.weather[0].description === "sunny") {
-            imgpath = "./images/sunny.png"
+            imgpath = ""
           }
           
           else if (res.data.weather[0].description === "haze") {
-            imgpath = "./images/sunny.png"
+            imgpath = ""
           }
           else {
             imgpath = "./images/weather.png"
